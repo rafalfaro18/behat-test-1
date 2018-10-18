@@ -1,12 +1,12 @@
 <?php
 
 use Behat\Behat\Tester\Exception\PendingException;
-use Behat\Behat\Context\SnippetAcceptingContext;
+use Behat\Behat\Context\Context;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
 use PHPUnit\Framework\Assert;
 
-class FeatureContext implements SnippetAcceptingContext
+class FeatureContext implements Context
 {
   private $shelf;
   private $basket;
